@@ -18,6 +18,7 @@ app.get('/ip-details', async (req, res) => {
         res.status(500).json({ error: 'Error fetching IP details' });
     }
 });
+app.get('/',(req,res)=>{res.send("I am Okay and you, be always Okay");}
 
 // Start the server
 app.listen(PORT, () => {
